@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		972B68E1239BDFB900A0C54A /* day01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68DF239BDFB900A0C54A /* day01.cpp */; };
+		972B68E6239BFC0E00A0C54A /* fileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68E4239BFC0E00A0C54A /* fileReader.cpp */; };
 		9734FD59239B07B900082B48 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9734FD58239B07B900082B48 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		972B68DF239BDFB900A0C54A /* day01.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = day01.cpp; path = puzzle/day01.cpp; sourceTree = "<group>"; };
+		972B68E0239BDFB900A0C54A /* day01.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = day01.hpp; path = puzzle/day01.hpp; sourceTree = "<group>"; };
+		972B68E2239BDFD500A0C54A /* day01.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = day01.txt; path = input/day01.txt; sourceTree = "<group>"; };
+		972B68E4239BFC0E00A0C54A /* fileReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fileReader.cpp; sourceTree = "<group>"; };
+		972B68E5239BFC0E00A0C54A /* fileReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fileReader.hpp; sourceTree = "<group>"; };
+		972B68E7239C11BF00A0C54A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9734FD55239B07B900082B48 /* adventofcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adventofcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9734FD58239B07B900082B48 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -41,6 +49,7 @@
 		9734FD4C239B07B900082B48 = {
 			isa = PBXGroup;
 			children = (
+				972B68E7239C11BF00A0C54A /* .gitignore */,
 				9734FD57239B07B900082B48 /* adventofcode */,
 				9734FD56239B07B900082B48 /* Products */,
 			);
@@ -58,6 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				9734FD58239B07B900082B48 /* main.cpp */,
+				972B68E4239BFC0E00A0C54A /* fileReader.cpp */,
+				972B68E5239BFC0E00A0C54A /* fileReader.hpp */,
+				972B68DF239BDFB900A0C54A /* day01.cpp */,
+				972B68E0239BDFB900A0C54A /* day01.hpp */,
+				972B68E2239BDFD500A0C54A /* day01.txt */,
 			);
 			path = adventofcode;
 			sourceTree = "<group>";
@@ -119,7 +133,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				972B68E6239BFC0E00A0C54A /* fileReader.cpp in Sources */,
 				9734FD59239B07B900082B48 /* main.cpp in Sources */,
+				972B68E1239BDFB900A0C54A /* day01.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

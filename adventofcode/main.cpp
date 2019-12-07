@@ -7,9 +7,31 @@
 //
 
 #include <iostream>
+#include <fstream>
+#include "fileReader.hpp"
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+void solve(string);
+
+int main()
+{
+    try {
+        solve("day01");
+    }
+    catch (const exception& ex)
+    {
+        cout << "Exception happened: " << ex.what() << endl;
+        return 1;
+    }
+
     return 0;
+}
+
+void solve(string puzzle)
+{
+    string filename = puzzle+".txt";
+
+    FileReader fileReader(filename);
+    cout << fileReader.readOneLine() << endl;
 }
