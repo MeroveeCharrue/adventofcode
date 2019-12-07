@@ -34,6 +34,7 @@
 		972B68E7239C11BF00A0C54A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		972B68EB239C656C00A0C54A /* puzzle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = puzzle.cpp; sourceTree = "<group>"; };
 		972B68EC239C656C00A0C54A /* puzzle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = puzzle.hpp; sourceTree = "<group>"; };
+		972B68EE239C6DE400A0C54A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9734FD55239B07B900082B48 /* adventofcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adventofcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9734FD58239B07B900082B48 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -52,6 +53,7 @@
 		9734FD4C239B07B900082B48 = {
 			isa = PBXGroup;
 			children = (
+				972B68EE239C6DE400A0C54A /* README.md */,
 				972B68E7239C11BF00A0C54A /* .gitignore */,
 				9734FD57239B07B900082B48 /* adventofcode */,
 				9734FD56239B07B900082B48 /* Products */,
