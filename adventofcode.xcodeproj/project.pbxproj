@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		972B68E1239BDFB900A0C54A /* day01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68DF239BDFB900A0C54A /* day01.cpp */; };
 		972B68E6239BFC0E00A0C54A /* fileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68E4239BFC0E00A0C54A /* fileReader.cpp */; };
+		972B68ED239C656C00A0C54A /* puzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68EB239C656C00A0C54A /* puzzle.cpp */; };
 		9734FD59239B07B900082B48 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9734FD58239B07B900082B48 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,8 @@
 		972B68E4239BFC0E00A0C54A /* fileReader.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = fileReader.cpp; sourceTree = "<group>"; };
 		972B68E5239BFC0E00A0C54A /* fileReader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = fileReader.hpp; sourceTree = "<group>"; };
 		972B68E7239C11BF00A0C54A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		972B68EB239C656C00A0C54A /* puzzle.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = puzzle.cpp; sourceTree = "<group>"; };
+		972B68EC239C656C00A0C54A /* puzzle.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = puzzle.hpp; sourceTree = "<group>"; };
 		9734FD55239B07B900082B48 /* adventofcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adventofcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9734FD58239B07B900082B48 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,6 +75,8 @@
 				972B68DF239BDFB900A0C54A /* day01.cpp */,
 				972B68E0239BDFB900A0C54A /* day01.hpp */,
 				972B68E2239BDFD500A0C54A /* day01.txt */,
+				972B68EB239C656C00A0C54A /* puzzle.cpp */,
+				972B68EC239C656C00A0C54A /* puzzle.hpp */,
 			);
 			path = adventofcode;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				972B68E6239BFC0E00A0C54A /* fileReader.cpp in Sources */,
+				972B68ED239C656C00A0C54A /* puzzle.cpp in Sources */,
 				9734FD59239B07B900082B48 /* main.cpp in Sources */,
 				972B68E1239BDFB900A0C54A /* day01.cpp in Sources */,
 			);

@@ -9,15 +9,18 @@
 #include <iostream>
 #include <fstream>
 #include "fileReader.hpp"
+#include "puzzle.hpp"
+#include "day01.hpp"
 
 using namespace std;
 
-void solve(string);
+void solve(Puzzle*);
 
 int main()
 {
     try {
-        solve("day01");
+        Day01 day01;
+        solve(&day01);
     }
     catch (const exception& ex)
     {
@@ -28,10 +31,7 @@ int main()
     return 0;
 }
 
-void solve(string puzzle)
+void solve(Puzzle* puzzle)
 {
-    string filename = puzzle+".txt";
-
-    FileReader fileReader(filename);
-    cout << fileReader.readOneLine() << endl;
+    cout << puzzle->solve() << endl;
 }
