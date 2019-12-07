@@ -13,9 +13,10 @@
 #include <fstream>
 
 class FileReader {
+private:
     std::ifstream inputFile;
 public:
-    FileReader(std::string);
+    FileReader(const std::string&);
     ~FileReader();
     std::string readOneLine();
 };

@@ -10,7 +10,7 @@
 
 using namespace std;
 
-FileReader::FileReader(string filename)
+FileReader::FileReader(const string& filename)
 {
     inputFile.open(filename);
 
