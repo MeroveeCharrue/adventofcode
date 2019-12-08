@@ -35,11 +35,10 @@ int Day01::calculeForOneModule()
     int mass = getMass();
 
     int fuel = calculateFuel(mass);
-    fuelTotalForThisModule += fuel;
 
     while (fuel > 0) {
-        fuel = calculateFuel(fuel);
         fuelTotalForThisModule += fuel;
+        fuel = calculateFuel(fuel);
     }
 
     return fuelTotalForThisModule;
@@ -47,9 +46,7 @@ int Day01::calculeForOneModule()
 
 int Day01::calculateFuel(int mass)
 {
-    int fuel = (mass / 3) - 2;
-    if (fuel <= 0 ) fuel = 0;
-    return fuel;
+    return (mass / 3) - 2;
 }
 
 // This was for part one of this day.
