@@ -19,6 +19,7 @@ public:
     FileReader(const std::string&);
     ~FileReader();
     std::string readOneLine();
+    int readOneInt();
 };
 
 #endif /* fileReader_hpp */

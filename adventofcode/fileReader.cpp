@@ -26,6 +26,13 @@ string FileReader::readOneLine()
     return line;
 }
 
+int FileReader::readOneInt()
+{
+    int num;
+    inputFile >> num;
+    return num;
+}
+
 FileReader::~FileReader()
 {
     if (inputFile.is_open()) {

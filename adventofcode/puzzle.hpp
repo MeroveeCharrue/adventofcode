@@ -13,7 +13,7 @@
 #include "fileReader.hpp"
 
 class Puzzle {
-private:
+protected:
     FileReader fileReader;
 public:
     Puzzle(const std::string&);
