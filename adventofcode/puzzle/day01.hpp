@@ -16,7 +16,8 @@
 class Day01: public Puzzle {
 private:
     int getMass();
-    int calculateFuel();
+    int calculeForOneModule();
+    int calculateFuel(int);
 public:
     Day01();
     std::string solve();

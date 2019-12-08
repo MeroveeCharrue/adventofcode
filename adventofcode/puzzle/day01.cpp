@@ -18,7 +18,7 @@ string Day01::solve()
 {
     int sum = 0;
     while (!fileReader.isEof()) {
-        sum += calculateFuel();
+        sum += calculeForOneModule();
     }
 
     return to_string(sum);
@@ -29,7 +29,32 @@ int Day01::getMass()
     return fileReader.readOneInt();
 }
 
-int Day01::calculateFuel()
+int Day01::calculeForOneModule()
 {
-    return (getMass() / 3) - 2;
+    int fuelTotalForThisModule = 0;
+    int mass = getMass();
+
+    int fuel = calculateFuel(mass);
+    fuelTotalForThisModule += fuel;
+
+    while (fuel > 0) {
+        fuel = calculateFuel(fuel);
+        fuelTotalForThisModule += fuel;
+    }
+
+    return fuelTotalForThisModule;
 }
+
+int Day01::calculateFuel(int mass)
+{
+    int fuel = (mass / 3) - 2;
+    if (fuel <= 0 ) fuel = 0;
+    return fuel;
+}
+
+// This was for part one of this day.
+// But it had to evolve ;)
+//int Day01::calculateFuel()
+//{
+//    return (getMass() / 3) - 2;
+//}
