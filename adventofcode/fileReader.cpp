@@ -33,6 +33,11 @@ int FileReader::readOneInt()
     return num;
 }
 
+bool FileReader::isEof()
+{
+    return inputFile.eof();
+}
+
 FileReader::~FileReader()
 {
     if (inputFile.is_open()) {

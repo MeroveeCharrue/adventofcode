@@ -20,6 +20,7 @@ public:
     ~FileReader();
     std::string readOneLine();
     int readOneInt();
+    bool isEof();
 };
 
 #endif /* fileReader_hpp */

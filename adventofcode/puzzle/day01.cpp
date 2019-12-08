@@ -16,5 +16,20 @@ Day01::Day01(): Puzzle("day01")
 
 string Day01::solve()
 {
-    return "goodbyebluesky";
+    int sum = 0;
+    while (!fileReader.isEof()) {
+        sum += calculateFuel();
+    }
+
+    return to_string(sum);
+}
+
+int Day01::getMass()
+{
+    return fileReader.readOneInt();
+}
+
+int Day01::calculateFuel()
+{
+    return (getMass() / 3) - 2;
 }

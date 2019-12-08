@@ -14,6 +14,9 @@
 #include "puzzle.hpp"
 
 class Day01: public Puzzle {
+private:
+    int getMass();
+    int calculateFuel();
 public:
     Day01();
     std::string solve();
