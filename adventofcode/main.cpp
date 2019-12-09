@@ -11,6 +11,7 @@
 #include "fileReader.hpp"
 #include "puzzle.hpp"
 #include "day01.hpp"
+#include "day02.hpp"
 
 using namespace std;
 
@@ -21,6 +22,9 @@ int main()
     try {
         Day01 day01;
         solve(&day01);
+
+        Day02 day02;
+        solve(&day02);
     }
     catch (const exception& ex)
     {

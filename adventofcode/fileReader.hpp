@@ -18,7 +18,7 @@ private:
 public:
     FileReader(const std::string&);
     ~FileReader();
-    std::string readOneLine();
+    std::string readOneLine(char delim = '\n');
     int readOneInt();
     bool isEof();
 };

@@ -11,6 +11,7 @@
 		972B68E6239BFC0E00A0C54A /* fileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68E4239BFC0E00A0C54A /* fileReader.cpp */; };
 		972B68ED239C656C00A0C54A /* puzzle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 972B68EB239C656C00A0C54A /* puzzle.cpp */; };
 		9734FD59239B07B900082B48 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9734FD58239B07B900082B48 /* main.cpp */; };
+		977C60AB239EF64200A44202 /* day02.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 977C60A9239EF64200A44202 /* day02.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -37,6 +38,9 @@
 		972B68EE239C6DE400A0C54A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		9734FD55239B07B900082B48 /* adventofcode */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = adventofcode; sourceTree = BUILT_PRODUCTS_DIR; };
 		9734FD58239B07B900082B48 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		977C60A8239EF5DA00A44202 /* day02.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = day02.txt; path = input/day02.txt; sourceTree = "<group>"; };
+		977C60A9239EF64200A44202 /* day02.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = day02.cpp; path = puzzle/day02.cpp; sourceTree = "<group>"; };
+		977C60AA239EF64200A44202 /* day02.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = day02.hpp; path = puzzle/day02.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +83,9 @@
 				972B68E2239BDFD500A0C54A /* day01.txt */,
 				972B68EB239C656C00A0C54A /* puzzle.cpp */,
 				972B68EC239C656C00A0C54A /* puzzle.hpp */,
+				977C60A8239EF5DA00A44202 /* day02.txt */,
+				977C60A9239EF64200A44202 /* day02.cpp */,
+				977C60AA239EF64200A44202 /* day02.hpp */,
 			);
 			path = adventofcode;
 			sourceTree = "<group>";
@@ -140,6 +147,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				977C60AB239EF64200A44202 /* day02.cpp in Sources */,
 				972B68E6239BFC0E00A0C54A /* fileReader.cpp in Sources */,
 				972B68ED239C656C00A0C54A /* puzzle.cpp in Sources */,
 				9734FD59239B07B900082B48 /* main.cpp in Sources */,

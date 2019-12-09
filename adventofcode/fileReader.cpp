@@ -19,10 +19,10 @@ FileReader::FileReader(const string& filename)
     }
 }
 
-string FileReader::readOneLine()
+string FileReader::readOneLine(char delim)
 {
     string line;
-    getline(inputFile, line);
+    getline(inputFile, line, delim);
     return line;
 }
 
