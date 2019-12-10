@@ -28,7 +28,7 @@ int main()
     }
     catch (const exception& ex)
     {
-        cout << "Exception happened: " << ex.what() << endl;
+        cout << "Exception happened: " << ex.what() << '\n';
         return 1;
     }
 
@@ -37,5 +37,5 @@ int main()
 
 void solve(Puzzle* puzzle)
 {
-    cout << puzzle->solve() << endl;
+    cout << puzzle->solve() << '\n';
 }
