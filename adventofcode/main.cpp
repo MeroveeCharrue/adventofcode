@@ -19,18 +19,11 @@ void solve(Puzzle*);
 
 int main()
 {
-    try {
-        Day01 day01;
-        solve(&day01);
+    Day01 day01;
+    solve(&day01);
 
-        Day02 day02;
-        solve(&day02);
-    }
-    catch (const exception& ex)
-    {
-        cout << "Exception happened: " << ex.what() << '\n';
-        return 1;
-    }
+    Day02 day02;
+    solve(&day02);
 
     return 0;
 }
