@@ -38,6 +38,11 @@ bool FileReader::isEof()
     return inputFile.eof();
 }
 
+void FileReader::resetFileReader()
+{
+    inputFile.seekg(0);
+}
+
 FileReader::~FileReader()
 {
     if (inputFile.is_open()) {

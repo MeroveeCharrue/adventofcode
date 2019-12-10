@@ -47,11 +47,19 @@ int Day02::executeIntcode()
 
 void Day02::loadIntcodeInMemory()
 {
+    resetProgram();
     while (!fileReader.isEof()) {
         intcode.push_back(
             stoi(fileReader.readOneLine(','))
         );
     }
+}
+
+void Day02::resetProgram()
+{
+    fileReader.resetFileReader();
+    intcode.clear();
+    index = 0;
 }
 
 void Day02::restore1202ProgramAlarm()

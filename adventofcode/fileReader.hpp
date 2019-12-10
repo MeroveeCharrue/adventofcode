@@ -21,6 +21,7 @@ public:
     std::string readOneLine(char delim = '\n');
     int readOneInt();
     bool isEof();
+    void resetFileReader();
 };
 
 #endif /* fileReader_hpp */

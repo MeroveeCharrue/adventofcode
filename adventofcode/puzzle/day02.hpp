@@ -25,6 +25,7 @@ private:
     std::vector<int> intcode;
     int index;
     void loadIntcodeInMemory();
+    void resetProgram();
     void restore1202ProgramAlarm();
     int executeIntcode();
     Instruction readOneInstruction();
