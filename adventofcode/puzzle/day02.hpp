@@ -10,10 +10,24 @@
 #define day02_hpp
 
 #include <stdio.h>
+#include <vector>
 #include "puzzle.hpp"
+
+struct Instruction {
+    int opcode;
+    int inputA;
+    int inputB;
+    int output;
+};
 
 class Day02: public Puzzle {
 private:
+    std::vector<int> intcode;
+    int index;
+    void loadIntcodeInMemory();
+    void restore1202ProgramAlarm();
+    int executeIntcode();
+    Instruction readOneInstruction();
 public:
     Day02();
     std::string solve();
