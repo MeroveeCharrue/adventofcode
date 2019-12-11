@@ -24,10 +24,12 @@ class Day02: public Puzzle {
 private:
     std::vector<int> intcode;
     int index;
-    void loadIntcodeInMemory();
-    void resetProgram();
+    int solveDayTwoPartTwo();
     void restore1202ProgramAlarm();
     int executeIntcode();
+    void loadIntcodeInMemory();
+    void resetProgram();
+    void setNounAndVerb(int, int);
     Instruction readOneInstruction();
 public:
     Day02();

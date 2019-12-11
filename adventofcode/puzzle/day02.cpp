@@ -23,8 +23,40 @@ string Day02::solve()
     restore1202ProgramAlarm();
     output = executeIntcode();
 
-    return to_string(output);
+//    // Part one
+//    return to_string(output);
+
+    // Part two
+    int hundredTimesNounPlusVerb = solveDayTwoPartTwo();
+
+    return to_string(hundredTimesNounPlusVerb);
 }
+
+int Day02::solveDayTwoPartTwo()
+{
+    const int expectedOutput = 19690720;
+
+    for (int noun = 0; noun <= 99; noun++) {
+        for (int verb = 0; verb <= 99; verb++) {
+            loadIntcodeInMemory();
+            setNounAndVerb(noun, verb);
+            int output = executeIntcode();
+
+            if (output == expectedOutput) {
+                return 100 * noun + verb;
+            }
+        }
+    }
+
+    return 0;
+}
+
+void Day02::restore1202ProgramAlarm()
+{
+    setNounAndVerb(12, 2);
+}
+
+// Following stuff should be in dedicated Intcode class.
 
 int Day02::executeIntcode()
 {
@@ -62,10 +94,10 @@ void Day02::resetProgram()
     index = 0;
 }
 
-void Day02::restore1202ProgramAlarm()
+void Day02::setNounAndVerb(int noun, int verb)
 {
-    intcode.at(1) = 12;
-    intcode.at(2) = 2;
+    intcode.at(1) = noun;
+    intcode.at(2) = verb;
 }
 
 Instruction Day02::readOneInstruction()
