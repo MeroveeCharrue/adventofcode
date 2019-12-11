@@ -8,13 +8,11 @@
 
 #include "day03.hpp"
 
-using namespace std;
-
 Day03::Day03(): Puzzle("day03")
 {
 }
 
-string Day03::solve()
+std::string Day03::solve()
 {
     return "let's get clanking";
 }

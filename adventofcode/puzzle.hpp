@@ -9,7 +9,6 @@
 #ifndef puzzle_hpp
 #define puzzle_hpp
 
-#include <stdio.h>
 #include "fileReader.hpp"
 
 class Puzzle {

@@ -14,8 +14,6 @@
 #include "day02.hpp"
 #include "day03.hpp"
 
-using namespace std;
-
 void solve(Puzzle*);
 
 int main()
@@ -34,5 +32,5 @@ int main()
 
 void solve(Puzzle* puzzle)
 {
-    cout << puzzle->solve() << '\n';
+    std::cout << puzzle->solve() << '\n';
 }

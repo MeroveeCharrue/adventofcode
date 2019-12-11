@@ -9,7 +9,6 @@
 #ifndef fileReader_hpp
 #define fileReader_hpp
 
-#include <stdio.h>
 #include <fstream>
 
 class FileReader {

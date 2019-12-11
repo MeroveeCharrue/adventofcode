@@ -9,7 +9,6 @@
 #ifndef day03_hpp
 #define day03_hpp
 
-#include <stdio.h>
 #include "puzzle.hpp"
 
 class Day03: public Puzzle {

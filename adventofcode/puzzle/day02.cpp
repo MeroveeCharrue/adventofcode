@@ -8,14 +8,12 @@
 
 #include "day02.hpp"
 
-using namespace std;
-
 Day02::Day02(): Puzzle("day02")
 {
     index = 0;
 }
 
-string Day02::solve()
+std::string Day02::solve()
 {
     int output;
 
@@ -29,7 +27,7 @@ string Day02::solve()
     // Part two
     int hundredTimesNounPlusVerb = solveDayTwoPartTwo();
 
-    return to_string(hundredTimesNounPlusVerb);
+    return std::to_string(hundredTimesNounPlusVerb);
 }
 
 int Day02::solveDayTwoPartTwo()

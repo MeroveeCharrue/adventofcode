@@ -8,20 +8,18 @@
 
 #include "day01.hpp"
 
-using namespace std;
-
 Day01::Day01(): Puzzle("day01")
 {
 }
 
-string Day01::solve()
+std::string Day01::solve()
 {
     int sum = 0;
     while (!fileReader.isEof()) {
         sum += calculeForOneModule();
     }
 
-    return to_string(sum);
+    return std::to_string(sum);
 }
 
 int Day01::getMass()

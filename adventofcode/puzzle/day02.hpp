@@ -9,7 +9,6 @@
 #ifndef day02_hpp
 #define day02_hpp
 
-#include <stdio.h>
 #include <vector>
 #include "puzzle.hpp"
 
