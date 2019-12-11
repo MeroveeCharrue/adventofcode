@@ -12,6 +12,7 @@
 #include "puzzle.hpp"
 #include "day01.hpp"
 #include "day02.hpp"
+#include "day03.hpp"
 
 using namespace std;
 
@@ -24,6 +25,9 @@ int main()
 
     Day02 day02;
     solve(&day02);
+
+    Day03 day03;
+    solve(&day03);
 
     return 0;
 }
